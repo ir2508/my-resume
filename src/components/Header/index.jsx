@@ -10,7 +10,8 @@ const HeaderStyled = styled.header`
     flex-direction: column;
 
     h1 {
-        font-size: 32px
+        font-size: 32px;
+        margin-bottom: 50px;
     }
 
     .item-menu {

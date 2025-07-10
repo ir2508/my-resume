@@ -15,11 +15,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-color: var(--principal-color);
-  color: #FFFFFF;
-}
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -30,9 +25,11 @@ a:hover {
 }
 
 body {
+  background-color: var(--principal-color);
+  font-family: "Montserrat";
+  color: #FFFFFF;
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
