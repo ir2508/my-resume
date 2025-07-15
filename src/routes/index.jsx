@@ -17,11 +17,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'education',
-                element: <EducationProvider><Education /></EducationProvider>
+                element: (<EducationProvider><Education /></EducationProvider>)
             },
             {
                 path: 'professional-experience',
-                element: <ProfessionalProvider><ProfessionalExperience /></ProfessionalProvider>
+                element: (<ProfessionalProvider><ProfessionalExperience /></ProfessionalProvider>)
             },
             {
                 path: '*',

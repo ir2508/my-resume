@@ -7,14 +7,18 @@ const CardStyled = styled.div`
     gap: 50px;
     justify-content: center;
     align-items: center;
+
+    img {
+        max-width: 170px;
+    }
 `
 
-const LogoInfoCard = ({ educationDetails }) => {
+const LogoInfoCard = ({ infoDetails }) => {
     return (
         <CardStyled>
-            <img src={`src\\assets\\images\\logos\\${educationDetails.logoPath}`} alt={`Logo ${educationDetails.institution}`}/>
+            <img src={`src\\assets\\images\\logos\\${infoDetails.logoPath}`} alt={`Logo ${infoDetails.institution}`} />
             <TextLabel>
-                {`${educationDetails.period} | ${educationDetails.course} - ${educationDetails.institution}`}
+                {`${infoDetails.period} | ${infoDetails.course ? infoDetails.course : infoDetails.jobDescription} - ${infoDetails.institution}`}
             </TextLabel>
         </CardStyled>
     )

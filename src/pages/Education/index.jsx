@@ -18,7 +18,7 @@ const Education = () => {
 
     return (
         <EducationStyled>
-            {educationList.map((item) => <LogoInfoCard key={item.key} educationDetails={item} />)}
+            {educationList.map((item) => <LogoInfoCard key={item.key} infoDetails={item} />)}
         </EducationStyled>
     )
 }
