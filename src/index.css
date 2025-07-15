@@ -1,4 +1,6 @@
 :root {
+  --principal-color: #16172B;
+  --secondary-color: #55B7F9;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -23,9 +25,11 @@ a:hover {
 }
 
 body {
+  background-color: var(--principal-color);
+  font-family: "Montserrat";
+  color: #FFFFFF;
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
