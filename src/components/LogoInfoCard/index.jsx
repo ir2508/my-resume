@@ -16,7 +16,7 @@ const CardStyled = styled.div`
 const LogoInfoCard = ({ infoDetails }) => {
     return (
         <CardStyled>
-            <img src={`src\\assets\\images\\logos\\${infoDetails.logoPath}`} alt={`Logo ${infoDetails.institution}`} />
+            <img src={`/images/logos/${infoDetails.logoPath}`} alt={`Logo ${infoDetails.institution}`} />
             <TextLabel>
                 {`${infoDetails.period} | ${infoDetails.course ? infoDetails.course : infoDetails.jobDescription} - ${infoDetails.institution}`}
             </TextLabel>
