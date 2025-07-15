@@ -3,6 +3,8 @@ import AboutMe from "../pages/AboutMe";
 import Education from "../pages/Education";
 import ProfessionalExperience from "../pages/ProfessionalExperience";
 import LayoutDefault from "../layouts/LayoutDefault";
+import { EducationProvider } from "../contexts/EducationContext";
+import { ProfessionalProvider } from "../contexts/ProfessionalContext";
 
 export const router = createBrowserRouter([
     {
@@ -15,12 +17,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'education',
-                element: <Education />
+                element: <EducationProvider><Education /></EducationProvider>
             },
             {
                 path: 'professional-experience',
-                element: <ProfessionalExperience />
-            }, 
+                element: <ProfessionalProvider><ProfessionalExperience /></ProfessionalProvider>
+            },
             {
                 path: '*',
                 element: "Ops, page not found! Try again"
