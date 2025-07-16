@@ -6,6 +6,12 @@ const LabelStyled = styled.div`
     border-radius: 10px;
     width: 100%;
     box-shadow: 0px 0px 5px var(--secondary-color);
+    
+    @media (max-width: 768px) {
+        text-align: center;
+        border-radius: 0px;
+        
+    }
 `
 
 const TextLabel = ({ children }) => {
