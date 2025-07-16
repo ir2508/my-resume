@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 
 const HeaderStyled = styled.header`
@@ -16,10 +16,14 @@ const HeaderStyled = styled.header`
 
     .item-menu {
         margin-right: 20px;
-        background-color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
         padding: 10px 20px;
         border-radius: 5px;
         color: #FFF;
+    }
+
+    .ativo {
+        background-color: var(--secondary-color);
     }
 `
 
@@ -28,9 +32,9 @@ const Header = () => {
         <HeaderStyled>
             <h1>Hello World! I'm Igor Roberto Front-End Developer </h1>
             <nav>
-                <Link className="item-menu" to="/education">Education</Link>
-                <Link className="item-menu" to="/">About Me</Link>
-                <Link className="item-menu" to="/professional-experience">Professional Experience</Link>
+                <NavLink className={({ isActive }) => `item-menu${isActive ? " ativo" : ""}`} to="/education">Education</NavLink>
+                <NavLink className={({ isActive }) => `item-menu${isActive ? " ativo" : ""}`} to="/">About Me</NavLink>
+                <NavLink className={({ isActive }) => `item-menu${isActive ? " ativo" : ""}`} to="/professional-experience">Professional Experience</NavLink>
             </nav>
         </HeaderStyled>
     )
