@@ -10,12 +10,20 @@ const ProfileDescStyled = styled.section`
     margin: 50px auto;
 
     p {
-        font-size: 18px
+        font-size: 1.1em
     }
 
     .link-social-media {
         color: white;
         text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        ul li {
+            text-align: left;
+        }
     }
 `
 
@@ -23,6 +31,8 @@ const ImgProfileStyled = styled.img`
     width: 250px;
     border-radius: 50%;
     box-shadow: 0px 0px 15px var(--secondary-color);
+
+
 `
 
 const AboutMe = () => {

@@ -11,6 +11,15 @@ const CardStyled = styled.div`
     img {
         max-width: 170px;
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        border-top: 1px solid #FFF;
+
+        img {
+            margin-top: 20px;
+        }
+    }
 `
 
 const LogoInfoCard = ({ infoDetails }) => {
